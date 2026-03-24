@@ -47,7 +47,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Link
-              href="#contact"
+              href="/book-call"
               className="bg-white text-black font-semibold px-8 py-3.5 rounded-full text-base hover:bg-gray-100 transition-all duration-200 hover:scale-105 active:scale-100"
             >
               Book a Call
