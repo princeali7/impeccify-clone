@@ -89,13 +89,6 @@ export default function Process() {
                               viewBox="0 0 171 171"
                               fill="none"
                             >
-                              <script
-                                xmlns=""
-                                id="eppiocemhmnlbhjplcgkofciiegomcon"
-                              />
-                              <script xmlns="" />
-                              <script xmlns="" />
-                              <script xmlns="" />
                               <path
                                 d="M106.572 50.1385C106.572 50.1385 110.106 53.6727 113.64 60.7413C113.64 60.7413 124.867 43.0699 134.846 39.5356"
                                 stroke="white"
@@ -167,13 +160,6 @@ export default function Process() {
                               viewBox="0 0 156 156"
                               fill="none"
                             >
-                              <script
-                                xmlns=""
-                                id="eppiocemhmnlbhjplcgkofciiegomcon"
-                              />
-                              <script xmlns="" />
-                              <script xmlns="" />
-                              <script xmlns="" />
                               <path
                                 d="M86.4193 125.913L38.0999 134.886C28.832 136.607 24.1981 137.468 21.5285 134.798C18.8589 132.128 19.7194 127.494 21.4405 118.226L30.4131 69.9041C31.852 62.156 32.5714 58.2817 35.1254 55.9408C37.6795 53.5999 42.3503 53.143 51.6921 52.2293C60.6957 51.3487 69.2166 48.2622 78.098 39.3804L116.946 78.2319C108.065 87.114 104.976 95.6289 104.095 104.633C103.18 113.976 102.722 118.648 100.381 121.201C98.0408 123.755 94.1669 124.474 86.4193 125.913Z"
                                 stroke="black"
