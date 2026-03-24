@@ -39,7 +39,7 @@ export default function Header() {
                 key={item.label}
                 href={item.href} 
                 className="text-sm text-gray-400 hover:text-white transition-colors duration-200"
-              > 
+              >
                 {item.label}
               </Link>
             ))}
