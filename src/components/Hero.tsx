@@ -53,7 +53,7 @@ export default function Hero() {
               Book a Call
             </Link>
             <Link
-              href="https://impeccify.com/website-cost-calculator"
+              href="/website-cost-calculator"
               className="border border-white/20 text-white font-semibold px-8 py-3.5 rounded-full text-base hover:border-white/40 hover:bg-white/5 transition-all duration-200"
             >
               Price Calculator
