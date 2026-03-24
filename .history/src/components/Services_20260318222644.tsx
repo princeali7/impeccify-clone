@@ -1,0 +1,124 @@
+import Link from 'next/link';
+import Image from 'next/image';
+
+const BASE = 'https://impeccify.com/_next/static/media';
+
+const CheckIcon = () => (
+  <img
+    src={`${BASE}/checkmark.a069e7ec.svg`}
+    alt="✓"
+    className="w-5 h-5 shrink-0 mt-0.5"
+  />
+);
+
+const serviceData = [
+  {
+    tag: 'Our Services',
+    title: 'UI/UX Design & Web Design Services',
+    description:
+      'Professional UI UX design and development services. We create stunning, user-centered responsive web designs that help businesses stand out and convert visitors into customers.',
+    features: [
+      'Multiple stunning design options with different styles',
+      'Expert UI/UX design and development services',
+      'Unlimited revisions before finalizing perfectly',
+      'Custom website design precisely as per your preferences',
+      'Responsive web design service for all devices',
+      'Premium User Experience focused design',
+    ],
+    cta: 'Get Started',
+    ctaLink: 'https://impeccify.com/get-started?plan=Website%20Design',
+    image: `https://impeccify.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F1.08b667ec.png&w=3840&q=75`,
+    imageAlt: 'UI/UX Design & Web Design Services',
+  },
+  {
+    tag: '',
+    title: 'Custom Website Development Services',
+    description:
+      'Expert custom web app development services and ecommerce website development. We build high-performance websites with Next.js that drive business growth worldwide.',
+    features: [
+      'Custom website development with pixel-perfect responsiveness',
+      'Smooth Animations and Micro-Interactions',
+      'Ecommerce website development with Stripe, PayPal integration',
+      'Web app design services with SEO optimization',
+      'Custom web app development with API integrations',
+      'Forms, Contact Us, and CRM Integration',
+    ],
+    cta: 'Get Started',
+    ctaLink: 'https://impeccify.com/get-started?plan=Website%20Development',
+    image: `https://impeccify.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2F2.794322e8.png&w=3840&q=75`,
+    imageAlt: 'Custom Website Development Services',
+  },
+];
+
+export default function Services() {
+  return (
+    <section id="services" className="relative py-9 overflow-hidden">
+      {/* Background gradients */}
+      <img
+        src="https://impeccify.com/gradients/hero1.svg"
+        alt=""
+        className="absolute top-0 left-0 w-[600px] pointer-events-none opacity-60"
+      />
+      <img
+        src="https://impeccify.com/gradients/hero2.svg"
+        alt=""
+        className="absolute bottom-0 right-0 w-[600px] pointer-events-none opacity-60"
+      />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <span className="text-sm text-blue-400 font-medium tracking-wide uppercase">Our Services</span>
+          <h2 className="text-3xl md:text-5xl font-bold mt-3 mb-4">Web Design and Development Services</h2>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            Services that are built to last, with the latest technology. Get the world-class designs, faster.
+          </p>
+        </div>
+
+        {/* Service Cards */}
+        <div className="space-y-24">
+          {serviceData.map((service, idx) => (
+            <div
+              key={idx}
+              className={`flex flex-col ${idx % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-12 items-center`}
+            >
+              {/* Text Content */}
+              <div className="flex-1">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4">{service.title}</h3>
+                <p className="text-gray-400 mb-8 leading-relaxed">{service.description}</p>
+                <ul className="space-y-3 mb-8">
+                  {service.features.map((feature, fi) => (
+                    <li key={fi} className="flex items-start gap-3">
+                      <CheckIcon />
+                      <span className="text-gray-300 text-sm">{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Link
+                  href={service.ctaLink}
+                  className="inline-flex bg-white text-black font-semibold px-7 py-3 rounded-full hover:bg-gray-100 transition-all duration-200 hover:scale-105 active:scale-100"
+                >
+                  {service.cta}
+                </Link>
+              </div>
+
+              {/* Real Service Image */}
+              <div className="flex-1 w-full">
+                <div className="rounded-2xl overflow-hidden border border-white/[0.06]">
+                  <Image
+                    src={service.image}
+                    alt={service.imageAlt}
+                    width={800}
+                    height={600}
+                    className="w-full h-auto"
+                    unoptimized
+                  />
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
