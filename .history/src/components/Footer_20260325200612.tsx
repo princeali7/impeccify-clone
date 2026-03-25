@@ -76,9 +76,9 @@ export default function Footer() {
                 />
               </svg>
 
-              {/* <span className="text-white font-bold tracking-tight">
+              <span className="text-white font-bold tracking-tight">
                 IMPECCIFY
-              </span> */}
+              </span>
             </div>
 
             {/* Links */}
