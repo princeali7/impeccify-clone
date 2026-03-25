@@ -30,7 +30,7 @@ export default function Header() {
             {[
               { label: 'Tools', href: '/tools' },
               { label: 'Pricing', href: '/pricing' },
-              { label: 'Process', href: '#process' },
+              { label: 'Process', href: '/process' },
               { label: 'Blog', href: '/blog' },
               { label: 'About', href: '#about' },
               { label: 'Contact', href: '#contact' },
@@ -82,7 +82,7 @@ export default function Header() {
             {['Tools', 'Pricing', 'Process', 'Blog', 'About', 'Contact'].map((item) => (
               <Link
                 key={item}
-                href={item === 'Tools' ? '/tools' : item === 'Blog' ? '/blog' : item === 'Pricing' ? '/pricing' : `#${item.toLowerCase()}`}
+                href={item === 'Tools' ? '/tools' : item === 'Blog' ? '/blog' : item === 'Pricing' ? '/pricing' : item === 'Process' ? '/process' : `#${item.toLowerCase()}`}
                 className="text-gray-300 hover:text-white text-base transition-colors duration-200"
                 onClick={() => setMobileOpen(false)}
               >
