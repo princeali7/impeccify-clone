@@ -2,10 +2,10 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const portfolioImages = [
-  { src: '/portfolio/1.avif', alt: 'Project 1' },
-  { src: '/portfolio/2.avif', alt: 'Project 2' },
-  { src: '/portfolio/3.avif', alt: 'Project 3' },
-  { src: '/portfolio/4.avif', alt: 'Project 4' },
+  { src: '/portfolio/1.png', alt: 'Project 1' },
+  { src: '/portfolio/2.png', alt: 'Project 2' },
+  { src: '/portfolio/3.png', alt: 'Project 3' },
+  { src: '/portfolio/4.png', alt: 'Project 4' },
   { src: '/portfolio/5.avif', alt: 'Project 5' },
   { src: '/portfolio/6.avif', alt: 'Project 6' },
   { src: '/portfolio/7.avif', alt: 'Project 7' },
